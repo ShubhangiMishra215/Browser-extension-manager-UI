@@ -11,15 +11,16 @@ const Navbar = ({activeFilter, setActiveFilter}) => {
         <div className='flex flex-row justify-center items-center gap-5 p-5'>
         {filters.map((filter)=>(
             <button
+            type="button"
             key={filter}
             onClick={()=>setActiveFilter(filter)}
             className={
-                `border shadow-md px-5 py-2 text-xl rounded-3xl cursor-pointer transition-colors hover:
+                `border shadow-md px-5 py-2 text-xl rounded-3xl cursor-pointer transition-colors
               ${activeFilter === filter
-                ? 'bg-red-500 text-black border-red-500 focus:outline-none focus:ring-2 focus:ring-red-700 focus:ring-offset-2 dark:ring-offset-gray-950 dark:bg-red-700'
-                : `bg-white border-[hsl(219,69%,87%)] hover:text-[hsl(226,11%,37%)] hover:bg-[hsl(200,60%,99%)]
+                ? 'bg-red-500 text-white border-red-500 focus:outline-none focus:ring-2 focus:ring-red-700 focus:ring-offset-2 dark:ring-offset-gray-950 dark:bg-red-700'
+                : `bg-white border-[hsl(219,69%,87%)] hover:bg-[hsl(200,60%,99%)]
                    dark:bg-[hsl(226,25%,17%)] dark:border-[hsl(226,11%,37%)] 
-                   dark:hover:bg-[hsl(226,11%,37%)]`
+                   dark:hover:bg-[hsl(226,11%,37%)] focus:outline-none focus:ring-2 focus:ring-red-700 focus:ring-offset-2 dark:ring-offset-gray-950`
               }`
             }
             >
