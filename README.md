@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://github.com/ShubhangiMishra215/Browser-extension-manager-UI.git)
+- Solution URL: https://github.com/ShubhangiMishra215/Browser-extension-manager-UI.git
 - Live Site URL: https://browser-extension-manager-ui-blond.vercel.app/
 
 ## My process
